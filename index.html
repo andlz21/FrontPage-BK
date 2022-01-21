@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="/css/mobile.css"
+    />
+    <link rel="stylesheet" href="/css/queries-media.css" />
+    <title>Burger King</title>
+  </head>
+
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <img class="bk-logo" src="/img/bk-logo.png" alt="BK-logo" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="allcontent">
+        <div class="text-content">
+          <h2>Burger King, where you’re the <u>boss</u>!</h2>
+          <h3>
+            <br />You’re gonna <span><u>LOVE</u></span> us!
+          </h3>
+          <p>
+            You have the right to have what you want,<br />
+            exactly when you want it. Because on the menu of <br />
+            life, you are "Today's Special". And tomorrow's. <br />
+            And the day after that. And... well, you get the <br />
+            drift. Yes, that's right. We may be the <strong>King</strong>,
+            <br />
+            but you my friend, are the <i>almighty ruler.</i>
+          </p>
+          <br />
+          <h4><strong>EST. 1954</strong></h4>
+          <button href="#" class="btn-learnmore">Learn More</button>
+        </div>
+        <div class="all-right-content">
+          <img
+            src="/img/king-whopper.png"
+            alt="bk-whopper"
+            class="bk-item"
+            id="bk-whopper"
+          />
+        </div>
+      </div>
+      <ul class="icon-list">
+        <li>
+          <img
+            src="/img/king-whooper-64-64.ico"
+            alt="burger-whopper"
+            onclick="imgSlider('/img/king-whopper.png'); changeCircleColor('#faaf18')"
+          />
+        </li>
+        <li>
+          <img
+            src="/img/burger-veg-64-64.ico"
+            alt="burger-veg"
+            onclick="imgSlider('/img/burger-veg.png'); changeCircleColor('#0033a0')"
+          />
+        </li>
+        <li>
+          <img
+            src="/img/burger-Xsalad-64-64.ico"
+            alt="burger-salad"
+            onclick="imgSlider('/img/burger-Xsalad.png'); changeCircleColor('#d61015')"
+          />
+        </li>
+        <li>
+          <img
+            src="/img/onion-rings-64x64.ico"
+            alt="onion-rings"
+            onclick="imgSlider('/img/onion-rings.png'); changeCircleColor('#0033a0')"
+          />
+        </li>
+      </ul>
+      <ul class="social-media">
+        <li>
+          <a href="#"><img src="/img/facebook-logo.png" alt="fb-logo" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/instagram-logo.png" alt="insta-logo" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="/img/twitter-logo.png" alt="twitter-logo" /></a>
+        </li>
+      </ul>
+    </section>
+  </body>
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.querySelector(".bk-item").src = anything;
+    }
+
+    function changeCircleColor(color) {
+      const circle = document.querySelector(".circle");
+      circle.style.backgroundColor = color;
+    }
+  </script>
+</html>
