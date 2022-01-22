@@ -4,6 +4,8 @@ Oi! Esse é um projeto de uma front page feito apenas com **HTML e CSS** para fi
 Adicionadas algumas animações ao passar o mouse sobre alguns elementos da página e com mudança de cor no detalhe de fundo ao lado direito ao clicar nos ícones na parte inferior.
 
 
+Esse projeto foi inspirado no projeto Starbucks feito nesse [link](https://youtu.be/91Q6RvKvd7o) aqui
+
 
 ##  Preview
 
